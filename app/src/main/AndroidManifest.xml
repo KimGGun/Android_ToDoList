@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".add_sch" />
+        <activity android:name=".add_sch2" />
+        <activity android:name=".add_sch3"></activity>
     </application>
 
 </manifest>
