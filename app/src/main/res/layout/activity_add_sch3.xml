@@ -11,22 +11,22 @@
         android:id="@+id/text_add3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Add"
         android:textColor="#fafafa"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/card_item"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="7:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_add3">
@@ -35,15 +35,73 @@
             android:id="@+id/edit_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="제목"
+            android:hint="할 일"
             android:inputType="textPersonName"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#80000000"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_item"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <EditText
+            android:id="@+id/eidt_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="상세 설명"
+            android:inputType="textPersonName"
+            android:textColorHint="#80000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_complete_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/card_item"
+        android:text="Complete !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/alarm_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Need Alarm ?"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
 </android.support.constraint.ConstraintLayout>
