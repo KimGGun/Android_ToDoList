@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".add_sch3">
+    tools:context=".AddSch3">
 
     <TextView
         android:id="@+id/text_add3"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
         <EditText
-            android:id="@+id/eidt_info"
+            android:id="@+id/edit_info"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"

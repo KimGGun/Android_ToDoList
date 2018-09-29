@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".add_sch2">
+    tools:context=".AddSch2">
 
     <TextView
         android:id="@+id/text_add2"
@@ -32,6 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_add2">
 
         <TimePicker
+            android:id="@+id/get_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:headerBackground="@drawable/main_gradient">

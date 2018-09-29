@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".add_sch">
+    tools:context=".AddSch">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
