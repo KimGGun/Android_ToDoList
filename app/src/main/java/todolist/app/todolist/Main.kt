@@ -28,26 +28,13 @@ class Main : AppCompatActivity() {
         val cur_day = Calendar.DAY_OF_MONTH
         val cur_month = Calendar.MONTH
         val cur_week = Calendar.WEEK_OF_MONTH
-        not_sch_week.setText("등록된 일정이 없습니다.")
-        not_sch_today.setText("등록된 일정이 없습니다.")
 
-
-        not_sch_today.setText(year)
-        not_sch_week.setText(day)
-        /*if(ActivityCount == 0){
-            not_sch_today.setText("등록된 일정이 없습니다.")
-            not_sch_week.setText("등록된 일정이 없습니다.")
-        } else if(cur_year == year && cur_month == month){
+        if(cur_year == 2018){
             if(cur_day == day){
-                not_sch_today.append("sex")
-                ActivityCount + 1
-            }
+                not_sch_today.setText("test")
 
-            if((cur_day / 7) == cur_week){
-                not_sch_week.append("sex")
-                ActivityCount + 1
             }
-        }*/
+        }
 
 
 
